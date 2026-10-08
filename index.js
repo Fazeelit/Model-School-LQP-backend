@@ -250,7 +250,9 @@ app.use((err, req, res, next) => {
 
 // ------------------ Server ------------------
 const PORT = config.port || 8080;
-const HOST = config.host;
+// Render sets HOST in some deployments; always bind publicly there even if
+// the checked-in/local .env contains HOST=127.0.0.1.
+const HOST = process.env.RENDER ? "0.0.0.0" : config.host;
 const isDevRuntime = process.env.NODE_ENV === "development" || process.env.npm_lifecycle_event === "dev";
 
 const server = http.createServer(app);

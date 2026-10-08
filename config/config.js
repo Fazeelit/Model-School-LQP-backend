@@ -14,9 +14,7 @@ console.log(`✅ Loaded environment variables from .env`);
 
 export default {
   port: process.env.PORT || 8080,
-  // Render and other hosted services require binding to all network interfaces.
-  // Keep the loopback default for local development unless HOST is explicitly set.
-  host: process.env.HOST || (process.env.RENDER ? "0.0.0.0" : "127.0.0.1"),
+  host: process.env.HOST || "127.0.0.1",
 
   // MongoDB
   mongodbUri: process.env.MONGO_URI ,
