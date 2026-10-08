@@ -1,0 +1,39 @@
+{
+  "name": "Model Secondary School LQP",
+  "version": "0.1.0",
+  "main": "index.js",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon --quiet index.js",
+    "reset-password": "node scripts/resetUserPassword.js",
+    "ensure-user": "node scripts/ensureUser.js"
+  },
+  "dependencies": {
+    "bcryptjs": "^3.0.2",
+    "cloudinary": "^2.8.0",
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.3",
+    "express": "^5.2.1",
+    "jsonwebtoken": "^9.0.3",
+    "mongoose": "^8.21.0",
+    "morgan": "^1.10.1",
+    "multer": "^2.0.2"
+  },
+  "devDependencies": {
+    "nodemon": "^1.14.10"
+  },
+  "description": "This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Fazeelit/mediposbackend.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Fazeelit/mediposbackend/issues"
+  },
+  "homepage": "https://github.com/Fazeelit/mediposbackend#readme"
+}
