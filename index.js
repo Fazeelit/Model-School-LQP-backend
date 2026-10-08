@@ -26,7 +26,7 @@ import { SCHOOL_PERMISSION_KEYS } from "./constants/accessControl.js";
 
 const app = express();
 const explicitAllowedOrigins = new Set([
-  "https://school-system1-frontend.vercel.app/",
+  "https://govtmodelschoollqp.vercel.app",
 ]);
 
 const DEFAULT_ROLE_SEED = [
